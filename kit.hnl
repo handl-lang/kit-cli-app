@@ -1,0 +1,20 @@
+-- kit-cli-app: kit.hnl v1 curation manifest (proposal P-004).
+-- Pure curation — no plugins, no entry/glue. `libs` entries are lib
+-- package names: the `lib-*` repo name minus the `lib-` prefix
+-- (e.g. repo `lib-mri` -> "mri"). Each package's own pkg.hnl `deps`
+-- pull its contracts and transitive backends.
+{
+  name: "kit-cli-app",
+  description: "Build CLI applications — argv parsing, stdio, POSIX fs/env/time, child processes, JSON, collections.",
+  license: "MIT",
+  libs: [
+    "mri",
+    "stdio",
+    "stdio-c",
+    "posix-c",
+    "cli",
+    "json",
+    "str-handl",
+    "collections",
+  ],
+}
