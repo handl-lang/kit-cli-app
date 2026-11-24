@@ -9,6 +9,9 @@
   license: "MIT",
   libs: [
     "mri",
+    "route",
+    "cli-router",
+    "msg-router",
     "stdio",
     "stdio-c",
     "posix-c",
