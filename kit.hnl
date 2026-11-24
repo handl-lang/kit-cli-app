@@ -12,6 +12,7 @@
     "route",
     "cli-router",
     "msg-router",
+    "proc",
     "stdio",
     "stdio-c",
     "posix-c",
